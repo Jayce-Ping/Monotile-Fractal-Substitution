@@ -1,6 +1,6 @@
 # Aperiodic Monotile Substitutions
 
-![substitution](https://github.com/Jayce-Ping/FractalSubstitution_Monotile/blob/e732c152c9d9ed40de02e1a851ffb39e65dae23e/Fig%26Video/Substitution(4-level).png?raw=true)
+![substitution](https://github.com/Jayce-Ping/FractalSubstitution_Monotile/blob/9b3361e4f8b5a0223016bfc6f1b1dc6ed028ea38/Fig%26Video/Substitution_4-level.png?raw=true)
 
 
 
