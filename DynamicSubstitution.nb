@@ -1,0 +1,1825 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    104420,       1817]
+NotebookOptionsPosition[    103903,       1799]
+NotebookOutlinePosition[    104338,       1816]
+CellTagsIndexPosition[    104295,       1813]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Substitution using all 1/3 vertices", "Title",
+ CellChangeTimes->{{3.9019588600417705`*^9, 3.9019588670155125`*^9}, {
+  3.901959680915382*^9, 
+  3.9019596936411467`*^9}},ExpressionUUID->"9e1db05e-02e2-4e44-893c-\
+27b9c2a03865"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`i$$ = 
+    4, $CellContext`level$$ = {<|"code" -> {{{
+          Rational[3, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 7}}, 
+      "controlPoints" -> {{0, 
+        0}, {-1, 3 3^Rational[1, 2]}, {-2, 2 3^Rational[1, 2]}, {-3, 3^
+         Rational[1, 2]}, {-2, 0}}|>, <|"code" -> {{{
+          Rational[-3, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 7}}, 
+      "controlPoints" -> {{0, 
+        0}, {-4, (-2) 3^Rational[1, 2]}, {-2, (-2) 3^Rational[1, 2]}, {
+        0, (-2) 3^Rational[1, 2]}, {1, -3^Rational[1, 2]}}|>, <|
+     "code" -> {{{-3, 0}, 10, False, 7}}, 
+      "controlPoints" -> {{-3, -3^Rational[1, 2]}, {-8, 
+        0}, {-7, -3^Rational[1, 2]}, {-6, (-2) 3^Rational[1, 2]}, {-4, (-2) 
+         3^Rational[1, 2]}}|>, <|"code" -> {{{-3, 0}, 2, True, 11}, {{
+          Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 7}}, 
+      "controlPoints" -> {{-6, 
+        0}, {-7, 3 3^Rational[1, 2]}, {-8, 2 3^Rational[1, 2]}, {-9, 3^
+         Rational[1, 2]}, {-8, 0}}|>, <|"code" -> {{{
+          Rational[-15, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 7}}, 
+      "controlPoints" -> {{-9, 3^Rational[1, 2]}, {-10, 4 
+         3^Rational[1, 2]}, {-11, 3 3^Rational[1, 2]}, {-12, 2 
+         3^Rational[1, 2]}, {-11, 3^Rational[1, 2]}}|>, <|"code" -> {{{
+          Rational[-15, 2], Rational[5, 2] 3^Rational[1, 2]}, 6, False, 7}}, 
+      "controlPoints" -> {{-9, 3 3^Rational[1, 2]}, {-5, 5 
+         3^Rational[1, 2]}, {-7, 5 3^Rational[1, 2]}, {-9, 5 
+         3^Rational[1, 2]}, {-10, 4 3^Rational[1, 2]}}|>, <|
+     "code" -> {{{-6, 3 3^Rational[1, 2]}, 4, False, 7}}, 
+      "controlPoints" -> {{-6, 4 3^Rational[1, 2]}, {-1, 3 
+         3^Rational[1, 2]}, {-2, 4 3^Rational[1, 2]}, {-3, 5 
+         3^Rational[1, 2]}, {-5, 5 3^Rational[1, 2]}}|>, <|"code" -> {{{
+          Rational[9, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 7}}, 
+      "controlPoints" -> {{3, -3^Rational[1, 2]}, {2, 2 3^Rational[1, 2]}, {
+        1, 3^Rational[1, 2]}, {0, 0}, {
+        1, -3^Rational[1, 2]}}|>}, $CellContext`ShowPoints$$ = True, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`i$$], 1, 7, 1}, {
+      Hold[$CellContext`level$$], {{<|"code" -> {{{
+              Rational[3, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 7}},
+           "controlPoints" -> {{0, 
+            0}, {-1, 3 3^Rational[1, 2]}, {-2, 2 3^Rational[1, 2]}, {-3, 3^
+             Rational[1, 2]}, {-2, 0}}|>, <|"code" -> {{{
+              Rational[-3, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}}, "controlPoints" -> {{0, 
+            0}, {-4, (-2) 3^Rational[1, 2]}, {-2, (-2) 3^Rational[1, 2]}, {
+            0, (-2) 3^Rational[1, 2]}, {1, -3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-3, 0}, 10, False, 7}}, 
+          "controlPoints" -> {{-3, -3^Rational[1, 2]}, {-8, 
+            0}, {-7, -3^Rational[1, 2]}, {-6, (-2) 
+             3^Rational[1, 2]}, {-4, (-2) 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-3, 0}, 2, True, 11}, {{
+              Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}}, "controlPoints" -> {{-6, 
+            0}, {-7, 3 3^Rational[1, 2]}, {-8, 2 3^Rational[1, 2]}, {-9, 3^
+             Rational[1, 2]}, {-8, 0}}|>, <|"code" -> {{{
+              Rational[-15, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+             7}}, "controlPoints" -> {{-9, 3^Rational[1, 2]}, {-10, 4 
+             3^Rational[1, 2]}, {-11, 3 3^Rational[1, 2]}, {-12, 2 
+             3^Rational[1, 2]}, {-11, 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[-15, 2], Rational[5, 2] 3^Rational[1, 2]}, 6, False, 
+             7}}, "controlPoints" -> {{-9, 3 3^Rational[1, 2]}, {-5, 5 
+             3^Rational[1, 2]}, {-7, 5 3^Rational[1, 2]}, {-9, 5 
+             3^Rational[1, 2]}, {-10, 4 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-6, 3 3^Rational[1, 2]}, 4, False, 7}}, 
+          "controlPoints" -> {{-6, 4 3^Rational[1, 2]}, {-1, 3 
+             3^Rational[1, 2]}, {-2, 4 3^Rational[1, 2]}, {-3, 5 
+             3^Rational[1, 2]}, {-5, 5 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[9, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}}, 
+          "controlPoints" -> {{3, -3^Rational[1, 2]}, {
+            2, 2 3^Rational[1, 2]}, {1, 3^Rational[1, 2]}, {0, 0}, {
+            1, -3^Rational[1, 2]}}|>} -> "Hat Tile", {<|"code" -> {{{
+              Rational[1, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-5, 2], Rational[3, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-4, 3^Rational[1, 2]}, 10, False, 
+             7}, {{-4, 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-11, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-17, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-17, 2], Rational[7, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-7, 4 3^Rational[1, 2]}, 4, False, 7}}, 
+          "controlPoints" -> {{0, 
+            0}, {-4, 6 3^Rational[1, 2]}, {-10, 6 3^Rational[1, 2]}, {-12, 2 
+             3^Rational[1, 2]}, {-7, -3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[-5, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-1, (-2) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[1, 2], Rational[-5, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[1, 2], Rational[-5, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[1, 2], Rational[-7, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[1, 2], Rational[-11, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-1, (-6) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-5, 2], Rational[-11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}}, "controlPoints" -> {{0, 
+            0}, {-7, (-5) 3^Rational[1, 2]}, {-4, (-8) 3^Rational[1, 2]}, {
+            3, (-7) 3^Rational[1, 2]}, {5, (-3) 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-7, 0}, 10, False, 7}, {{
+              Rational[-17, 2], Rational[-3, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-17, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-17, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-10, (-3) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-13, (-4) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-29, 2], Rational[-7, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-29, 2], Rational[-5, 2] 3^Rational[1, 2]}, 6, False, 
+             7}}, "controlPoints" -> {{-5, -3^Rational[1, 2]}, {-16, 
+            0}, {-19, (-3) 3^Rational[1, 2]}, {-14, (-6) 
+             3^Rational[1, 2]}, {-7, (-5) 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[-23, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-13, 2 3^Rational[1, 2]}, 10, False, 
+             7}, {{-13, 2 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-29, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-35, 2], Rational[7, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-35, 2], Rational[9, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-16, 5 3^Rational[1, 2]}, 4, False, 7}}, 
+          "controlPoints" -> {{-9, 3^Rational[1, 2]}, {-13, 7 
+             3^Rational[1, 2]}, {-19, 7 3^Rational[1, 2]}, {-21, 3 
+             3^Rational[1, 2]}, {-16, 0}}|>, <|"code" -> {{{
+              Rational[-41, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-47, 2], Rational[9, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-25, 4 3^Rational[1, 2]}, 10, False, 
+             7}, {{-25, 4 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-53, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-59, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-59, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-28, 7 3^Rational[1, 2]}, 4, False, 7}}, 
+          "controlPoints" -> {{-21, 3 3^Rational[1, 2]}, {-25, 9 
+             3^Rational[1, 2]}, {-31, 9 3^Rational[1, 2]}, {-33, 5 
+             3^Rational[1, 2]}, {-28, 2 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[-35, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-19, 8 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-41, 2], Rational[17, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-41, 2], Rational[17, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-41, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-41, 2], Rational[23, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-19, 12 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-35, 2], Rational[23, 2] 3^Rational[1, 2]}, 2, False, 
+             7}}, "controlPoints" -> {{-20, 6 3^Rational[1, 2]}, {-13, 11 
+             3^Rational[1, 2]}, {-16, 14 3^Rational[1, 2]}, {-23, 13 
+             3^Rational[1, 2]}, {-25, 9 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-13, 6 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-23, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-23, 2], Rational[17, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-23, 2], Rational[17, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-10, 9 3^Rational[1, 2]}, 4, False, 
+             7}, {{-7, 10 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-11, 2], Rational[19, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-11, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, False, 
+             7}}, "controlPoints" -> {{-15, 7 3^Rational[1, 2]}, {-4, 6 
+             3^Rational[1, 2]}, {-1, 9 3^Rational[1, 2]}, {-6, 12 
+             3^Rational[1, 2]}, {-13, 11 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[25, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[19, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{8, -3^Rational[1, 2]}, 10, False, 7}, {{
+             8, -3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[13, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[7, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[7, 2], Rational[3, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{5, 2 3^Rational[1, 2]}, 4, False, 7}}, 
+          "controlPoints" -> {{12, (-2) 3^Rational[1, 2]}, {
+            8, 4 3^Rational[1, 2]}, {2, 4 3^Rational[1, 2]}, {0, 0}, {
+            5, (-3) 3^Rational[1, 2]}}|>} -> "0-Supertile", {<|"code" -> {{{
+              Rational[-9, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-15, 2], Rational[9, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-9, 4 3^Rational[1, 2]}, 10, False, 
+             7}, {{-9, 4 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-21, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-27, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-27, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-12, 7 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-15, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-6, 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[-9, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-9, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-6, (-3) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-15, 2], Rational[-5, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{-12, 3 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-27, 2], Rational[3, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-27, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-27, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-15, 0}, 10, False, 7}, {{-18, -3^Rational[1, 2]}, 10, 
+             False, 7}, {{
+              Rational[-39, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-39, 2], Rational[1, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-33, 2], Rational[11, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-18, 5 3^Rational[1, 2]}, 10, False, 
+             7}, {{-18, 5 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-39, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-45, 2], Rational[13, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-45, 2], Rational[15, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-21, 8 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-51, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-57, 2], Rational[15, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-30, 7 3^Rational[1, 2]}, 10, False, 
+             7}, {{-30, 7 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-63, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-69, 2], Rational[17, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-69, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-33, 10 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-45, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-24, 11 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-51, 2], Rational[23, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-51, 2], Rational[23, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-51, 2], Rational[25, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-51, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-24, 15 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-45, 2], Rational[29, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{-18, 9 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-33, 2], Rational[21, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-33, 2], Rational[23, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-33, 2], Rational[23, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-15, 12 3^Rational[1, 2]}, 4, False, 
+             7}, {{-12, 13 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-21, 2], Rational[25, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-21, 2], Rational[23, 2] 3^Rational[1, 2]}, 0, False, 
+             7}}, "controlPoints" -> {{0, 
+            0}, {-11, 15 3^Rational[1, 2]}, {-28, 16 3^Rational[1, 2]}, {-33, 
+             5 3^Rational[1, 2]}, {-19, (-3) 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{
+              Rational[-9, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-3, (-6) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-3, 2], Rational[-13, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-3, 2], Rational[-13, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[-3, 2], Rational[-15, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-3, 2], Rational[-19, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-3, (-10) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-9, 2], Rational[-19, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{0, (-5) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[3, 2], Rational[-7, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[3, 2], Rational[-5, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[3, 2], Rational[-5, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{3, (-2) 3^Rational[1, 2]}, 4, False, 7}, {{
+             6, -3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[15, 2], Rational[-3, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[15, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[3, 2], Rational[-15, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[9, 2], Rational[-15, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{6, (-7) 3^Rational[1, 2]}, 4, False, 7}, {{
+             6, (-7) 3^Rational[1, 2]}, 8, True, 11}, {{
+              Rational[15, 2], Rational[-15, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[21, 2], Rational[-17, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[21, 2], Rational[-19, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{9, (-10) 3^Rational[1, 2]}, 10, False, 7}, {{
+             0, (-11) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[3, 2], Rational[-23, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[3, 2], Rational[-23, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[3, 2], Rational[-25, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[3, 2], Rational[-29, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{0, (-15) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-3, 2], Rational[-29, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[3, 2], Rational[-33, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{3, (-18) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[9, 2], Rational[-39, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[9, 2], Rational[-43, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{3, (-22) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[3, 2], Rational[-43, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{-3, (-16) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-9, 2], Rational[-35, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-6, (-19) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-9, (-20) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-21, 2], Rational[-39, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-21, 2], Rational[-37, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-9, 2], Rational[-27, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-15, 2], Rational[-27, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-9, (-14) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-9, (-14) 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-21, 2], Rational[-27, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-27, 2], Rational[-25, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-27, 2], Rational[-23, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-12, (-11) 3^Rational[1, 2]}, 4, False, 7}}, 
+          "controlPoints" -> {{0, 
+            0}, {-17, (-13) 3^Rational[1, 2]}, {-10, (-22) 
+             3^Rational[1, 2]}, {9, (-19) 3^Rational[1, 2]}, {
+            14, (-8) 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-21, (-2) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-45, 2], Rational[-7, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-45, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-45, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-24, (-5) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-27, (-6) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-57, 2], Rational[-11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-57, 2], Rational[-9, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-39, 2], Rational[-9, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-33, 2], Rational[-9, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-15, (-4) 3^Rational[1, 2]}, 4, False, 
+             7}, {{-15, (-4) 3^Rational[1, 2]}, 8, True, 11}, {{
+              Rational[-27, 2], Rational[-9, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-21, 2], Rational[-11, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-21, 2], Rational[-13, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-12, (-7) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-45, 2], Rational[-13, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-21, (-8) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-39, 2], Rational[-17, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-39, 2], Rational[-17, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[-39, 2], Rational[-19, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-39, 2], Rational[-23, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-21, (-12) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-45, 2], Rational[-23, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-57, 2], Rational[-15, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-57, 2], Rational[-17, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-57, 2], Rational[-17, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-30, (-9) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-33, (-10) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-69, 2], Rational[-19, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-69, 2], Rational[-17, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-36, (-11) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-75, 2], Rational[-25, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-75, 2], Rational[-27, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-75, 2], Rational[-27, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-39, (-14) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-42, (-15) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-87, 2], Rational[-29, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-87, 2], Rational[-27, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-75, 2], Rational[-17, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-81, 2], Rational[-17, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-42, (-9) 3^Rational[1, 2]}, 10, False, 
+             7}, {{-42, (-9) 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-87, 2], Rational[-17, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-93, 2], Rational[-15, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-93, 2], Rational[-13, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-45, (-6) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-69, 2], Rational[-13, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-36, (-5) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-75, 2], Rational[-9, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-75, 2], Rational[-9, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-75, 2], Rational[-7, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-75, 2], Rational[-3, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-36, -3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-69, 2], Rational[-3, 2] 3^Rational[1, 2]}, 2, False, 
+             7}}, "controlPoints" -> {{-12, (-2) 3^Rational[1, 2]}, {-40, 
+            0}, {-50, (-8) 3^Rational[1, 2]}, {-36, (-16) 
+             3^Rational[1, 2]}, {-17, (-13) 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{
+              Rational[-57, 2], Rational[11, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-27, 4 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-51, 2], Rational[7, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-51, 2], Rational[7, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[-51, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-51, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-27, 0}, 10, False, 7}, {{
+              Rational[-57, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{-33, 6 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-69, 2], Rational[9, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-69, 2], Rational[7, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-69, 2], Rational[7, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-36, 3 3^Rational[1, 2]}, 10, False, 
+             7}, {{-39, 2 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-81, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-81, 2], Rational[7, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-75, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-39, 8 3^Rational[1, 2]}, 10, False, 
+             7}, {{-39, 8 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-81, 2], Rational[17, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-87, 2], Rational[19, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-87, 2], Rational[21, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-42, 11 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-93, 2], Rational[21, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-99, 2], Rational[21, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-51, 10 3^Rational[1, 2]}, 10, False, 
+             7}, {{-51, 10 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-105, 2], Rational[21, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-111, 2], Rational[23, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-111, 2], Rational[25, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-54, 13 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-87, 2], Rational[25, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-45, 14 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-93, 2], Rational[29, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-93, 2], Rational[29, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-93, 2], Rational[31, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-93, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-45, 18 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-87, 2], Rational[35, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{-39, 12 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-75, 2], Rational[27, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-75, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-75, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-36, 15 3^Rational[1, 2]}, 4, False, 
+             7}, {{-33, 16 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-63, 2], Rational[31, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-63, 2], Rational[29, 2] 3^Rational[1, 2]}, 0, False, 
+             7}}, "controlPoints" -> {{-21, 3 3^Rational[1, 2]}, {-32, 18 
+             3^Rational[1, 2]}, {-49, 19 3^Rational[1, 2]}, {-54, 8 
+             3^Rational[1, 2]}, {-40, 0}}|>, <|"code" -> {{{
+              Rational[-117, 2], Rational[25, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-123, 2], Rational[25, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-63, 12 3^Rational[1, 2]}, 10, False, 
+             7}, {{-63, 12 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-129, 2], Rational[25, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-135, 2], Rational[27, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-135, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-66, 15 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-123, 2], Rational[21, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-60, 9 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-117, 2], Rational[17, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-117, 2], Rational[17, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[-117, 2], Rational[15, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-117, 2], Rational[11, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-60, 5 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-123, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{-66, 11 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-135, 2], Rational[19, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-135, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-135, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-69, 8 3^Rational[1, 2]}, 10, False, 
+             7}, {{-72, 7 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-147, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-147, 2], Rational[17, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-141, 2], Rational[27, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-72, 13 3^Rational[1, 2]}, 10, False, 
+             7}, {{-72, 13 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-147, 2], Rational[27, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-153, 2], Rational[29, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-153, 2], Rational[31, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-75, 16 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-159, 2], Rational[31, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-165, 2], Rational[31, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-84, 15 3^Rational[1, 2]}, 10, False, 
+             7}, {{-84, 15 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-171, 2], Rational[31, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-177, 2], Rational[33, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-177, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-87, 18 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-153, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-78, 19 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-159, 2], Rational[39, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-159, 2], Rational[39, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-159, 2], Rational[41, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-159, 2], Rational[45, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-78, 23 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-153, 2], Rational[45, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{-72, 17 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-141, 2], Rational[37, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-141, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-141, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-69, 20 3^Rational[1, 2]}, 4, False, 
+             7}, {{-66, 21 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-129, 2], Rational[41, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-129, 2], Rational[39, 2] 3^Rational[1, 2]}, 0, False, 
+             7}}, "controlPoints" -> {{-54, 8 3^Rational[1, 2]}, {-65, 23 
+             3^Rational[1, 2]}, {-82, 24 3^Rational[1, 2]}, {-87, 13 
+             3^Rational[1, 2]}, {-73, 5 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[-93, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-48, 21 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-99, 2], Rational[43, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-99, 2], Rational[43, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-99, 2], Rational[45, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-99, 2], Rational[49, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-48, 25 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-93, 2], Rational[49, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{-51, 20 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-105, 2], Rational[37, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-105, 2], Rational[35, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-105, 2], Rational[35, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{-54, 17 3^Rational[1, 2]}, 10, False, 
+             7}, {{-57, 16 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-117, 2], Rational[33, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-117, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-105, 2], Rational[45, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-111, 2], Rational[45, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-57, 22 3^Rational[1, 2]}, 10, False, 
+             7}, {{-57, 22 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-117, 2], Rational[45, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-123, 2], Rational[47, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-123, 2], Rational[49, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-60, 25 3^Rational[1, 2]}, 4, False, 
+             7}, {{-51, 26 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-105, 2], Rational[53, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-105, 2], Rational[53, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-105, 2], Rational[55, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-105, 2], Rational[59, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-51, 30 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-99, 2], Rational[59, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-105, 2], Rational[63, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-54, 33 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-111, 2], Rational[67, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-111, 2], Rational[67, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-111, 2], Rational[69, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-111, 2], Rational[73, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-54, 37 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-105, 2], Rational[73, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{-48, 31 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-93, 2], Rational[65, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-93, 2], Rational[67, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-93, 2], Rational[67, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-45, 34 3^Rational[1, 2]}, 4, False, 
+             7}, {{-42, 35 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-81, 2], Rational[69, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-81, 2], Rational[67, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-93, 2], Rational[57, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-87, 2], Rational[57, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-42, 29 3^Rational[1, 2]}, 4, False, 
+             7}, {{-42, 29 3^Rational[1, 2]}, 8, True, 11}, {{
+              Rational[-81, 2], Rational[57, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-75, 2], Rational[55, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-75, 2], Rational[53, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-39, 26 3^Rational[1, 2]}, 10, False, 7}}, 
+          "controlPoints" -> {{-51, 15 3^Rational[1, 2]}, {-34, 28 
+             3^Rational[1, 2]}, {-41, 37 3^Rational[1, 2]}, {-60, 34 
+             3^Rational[1, 2]}, {-65, 23 3^Rational[1, 2]}}|>, <|
+         "code" -> {{{-30, 17 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-57, 2], Rational[37, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-57, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-57, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-27, 20 3^Rational[1, 2]}, 4, False, 
+             7}, {{-24, 21 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-45, 2], Rational[41, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-45, 2], Rational[39, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-63, 2], Rational[39, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-69, 2], Rational[39, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-36, 19 3^Rational[1, 2]}, 10, False, 
+             7}, {{-36, 19 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[-75, 2], Rational[39, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-81, 2], Rational[41, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-81, 2], Rational[43, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-39, 22 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-57, 2], Rational[43, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-30, 23 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-63, 2], Rational[47, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-63, 2], Rational[47, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[-63, 2], Rational[49, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-63, 2], Rational[53, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-30, 27 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-57, 2], Rational[53, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-45, 2], Rational[45, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-45, 2], Rational[47, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-45, 2], Rational[47, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-21, 24 3^Rational[1, 2]}, 4, False, 
+             7}, {{-18, 25 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-33, 2], Rational[49, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-33, 2], Rational[47, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-15, 26 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-27, 2], Rational[55, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-27, 2], Rational[57, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[-27, 2], Rational[57, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{-12, 29 3^Rational[1, 2]}, 4, False, 
+             7}, {{-9, 30 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-15, 2], Rational[59, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-15, 2], Rational[57, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-27, 2], Rational[47, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-21, 2], Rational[47, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{-9, 24 3^Rational[1, 2]}, 4, False, 
+             7}, {{-9, 24 3^Rational[1, 2]}, 8, True, 11}, {{
+              Rational[-15, 2], Rational[47, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-9, 2], Rational[45, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-9, 2], Rational[43, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-6, 21 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-33, 2], Rational[43, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-15, 20 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[-27, 2], Rational[39, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[-27, 2], Rational[39, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[-27, 2], Rational[37, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[-27, 2], Rational[33, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{-15, 16 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[-33, 2], Rational[33, 2] 3^Rational[1, 2]}, 8, False, 
+             7}}, "controlPoints" -> {{-39, 17 3^Rational[1, 2]}, {-11, 15 
+             3^Rational[1, 2]}, {-1, 23 3^Rational[1, 2]}, {-15, 31 
+             3^Rational[1, 2]}, {-34, 28 3^Rational[1, 2]}}|>, <|"code" -> {{{
+              Rational[57, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[51, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{24, -3^Rational[1, 2]}, 10, False, 7}, {{
+             24, -3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[45, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[39, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[39, 2], Rational[3, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{21, 2 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[51, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{27, (-4) 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[57, 2], Rational[-9, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[57, 2], Rational[-9, 2] 3^Rational[1, 2]}, 10, True, 
+             11}, {{
+              Rational[57, 2], Rational[-11, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[57, 2], Rational[-15, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{27, (-8) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[51, 2], Rational[-15, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{21, (-2) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[39, 2], Rational[-7, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[39, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{
+              Rational[39, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, True, 
+             11}, {{18, (-5) 3^Rational[1, 2]}, 10, False, 7}, {{
+             15, (-6) 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[27, 2], Rational[-11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[27, 2], Rational[-9, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[33, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{15, 0}, 10, False, 7}, {{15, 0}, 2, True, 11}, {{
+              Rational[27, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[21, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[21, 2], Rational[5, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{12, 3 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[15, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[9, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False, 
+             7}, {{3, 2 3^Rational[1, 2]}, 10, False, 7}, {{
+             3, 2 3^Rational[1, 2]}, 2, True, 11}, {{
+              Rational[3, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-3, 2], Rational[7, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[-3, 2], Rational[9, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{0, 5 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[21, 2], Rational[9, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{9, 6 3^Rational[1, 2]}, 10, False, 7}, {{
+              Rational[15, 2], Rational[13, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[15, 2], Rational[13, 2] 3^Rational[1, 2]}, 4, True, 
+             11}, {{
+              Rational[15, 2], Rational[15, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[15, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{9, 10 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[21, 2], Rational[19, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{15, 4 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[33, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, False, 
+             7}, {{
+              Rational[33, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, False, 
+             7}, {{
+              Rational[33, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, True, 
+             11}, {{18, 7 3^Rational[1, 2]}, 4, False, 7}, {{
+             21, 8 3^Rational[1, 2]}, 4, False, 7}, {{
+              Rational[45, 2], Rational[15, 2] 3^Rational[1, 2]}, 2, False, 
+             7}, {{
+              Rational[45, 2], Rational[13, 2] 3^Rational[1, 2]}, 0, False, 
+             7}}, "controlPoints" -> {{33, (-5) 3^Rational[1, 2]}, {
+            22, 10 3^Rational[1, 2]}, {5, 11 3^Rational[1, 2]}, {0, 0}, {
+            14, (-8) 3^Rational[1, 2]}}|>} -> "1-Supertile"}}, {
+      Hold[$CellContext`ShowPoints$$], {True, False}}}, Typeset`size$$ = {
+    360., {161., 166.37468333589732`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`i$$ = 
+        1, $CellContext`level$$ = {<|"code" -> {{{
+               Rational[3, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+              7}}, "controlPoints" -> {{0, 
+             0}, {-1, 3 3^Rational[1, 2]}, {-2, 2 3^Rational[1, 2]}, {-3, 3^
+              Rational[1, 2]}, {-2, 0}}|>, <|"code" -> {{{
+               Rational[-3, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+              7}}, "controlPoints" -> {{0, 
+             0}, {-4, (-2) 3^Rational[1, 2]}, {-2, (-2) 3^Rational[1, 2]}, {
+             0, (-2) 3^Rational[1, 2]}, {1, -3^Rational[1, 2]}}|>, <|
+          "code" -> {{{-3, 0}, 10, False, 7}}, 
+           "controlPoints" -> {{-3, -3^Rational[1, 2]}, {-8, 
+             0}, {-7, -3^Rational[1, 2]}, {-6, (-2) 
+              3^Rational[1, 2]}, {-4, (-2) 3^Rational[1, 2]}}|>, <|
+          "code" -> {{{-3, 0}, 2, True, 11}, {{
+               Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+              7}}, "controlPoints" -> {{-6, 
+             0}, {-7, 3 3^Rational[1, 2]}, {-8, 2 3^Rational[1, 2]}, {-9, 3^
+              Rational[1, 2]}, {-8, 0}}|>, <|"code" -> {{{
+               Rational[-15, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+              7}}, "controlPoints" -> {{-9, 3^Rational[1, 2]}, {-10, 4 
+              3^Rational[1, 2]}, {-11, 3 3^Rational[1, 2]}, {-12, 2 
+              3^Rational[1, 2]}, {-11, 3^Rational[1, 2]}}|>, <|"code" -> {{{
+               Rational[-15, 2], Rational[5, 2] 3^Rational[1, 2]}, 6, False, 
+              7}}, "controlPoints" -> {{-9, 3 3^Rational[1, 2]}, {-5, 5 
+              3^Rational[1, 2]}, {-7, 5 3^Rational[1, 2]}, {-9, 5 
+              3^Rational[1, 2]}, {-10, 4 3^Rational[1, 2]}}|>, <|
+          "code" -> {{{-6, 3 3^Rational[1, 2]}, 4, False, 7}}, 
+           "controlPoints" -> {{-6, 4 3^Rational[1, 2]}, {-1, 3 
+              3^Rational[1, 2]}, {-2, 4 3^Rational[1, 2]}, {-3, 5 
+              3^Rational[1, 2]}, {-5, 5 3^Rational[1, 2]}}|>, <|"code" -> {{{
+               Rational[9, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+              7}}, "controlPoints" -> {{3, -3^Rational[1, 2]}, {
+             2, 2 3^Rational[1, 2]}, {1, 3^Rational[1, 2]}, {0, 0}, {
+             1, -3^Rational[1, 2]}}|>}, $CellContext`ShowPoints$$ = True}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Map[Graphics[{
+           ReplaceAll[
+            #["code"], {{
+               Pattern[$CellContext`pos, 
+                Blank[]], 
+               Pattern[$CellContext`or, 
+                Blank[]], False, 
+               Pattern[$CellContext`v, 
+                Blank[]]} :> {
+               Opacity[1], 
+               EdgeForm[Black], LightBlue, 
+               $CellContext`Tile[{1, 
+                 Sqrt[3]}][$CellContext`pos, $CellContext`or, 
+                False, $CellContext`v]}, {
+               Pattern[$CellContext`pos, 
+                Blank[]], 
+               Pattern[$CellContext`or, 
+                Blank[]], True, 
+               Pattern[$CellContext`v, 
+                Blank[]]} :> {
+               Opacity[0.8], 
+               EdgeForm[Black], 
+               Lighter[Blue], 
+               $CellContext`Tile[{1, 
+                 Sqrt[3]}][$CellContext`pos, $CellContext`or, 
+                True, $CellContext`v]}}], 
+           If[
+            TrueQ[$CellContext`ShowPoints$$], {Red, 
+             PointSize[0.03], 
+             Point[
+              #["controlPoints"]], 
+             Line[
+              Partition[
+               #["controlPoints"], 2, 1, 1]]}, Nothing]}]& , 
+         Part[$CellContext`level$$, 
+          Span[1, $CellContext`i$$]]]], 
+      "Specifications" :> {{$CellContext`i$$, 1, 7, 
+         1}, {$CellContext`level$$, {{<|"code" -> {{{
+                 Rational[3, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+                7}}, "controlPoints" -> {{0, 
+               0}, {-1, 3 3^Rational[1, 2]}, {-2, 2 3^Rational[1, 2]}, {-3, 3^
+                Rational[1, 2]}, {-2, 0}}|>, <|"code" -> {{{
+                 Rational[-3, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+                7}}, "controlPoints" -> {{0, 
+               0}, {-4, (-2) 3^Rational[1, 2]}, {-2, (-2) 3^Rational[1, 2]}, {
+               0, (-2) 3^Rational[1, 2]}, {1, -3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-3, 0}, 10, False, 7}}, 
+             "controlPoints" -> {{-3, -3^Rational[1, 2]}, {-8, 
+               0}, {-7, -3^Rational[1, 2]}, {-6, (-2) 
+                3^Rational[1, 2]}, {-4, (-2) 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-3, 0}, 2, True, 11}, {{
+                 Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+                7}}, "controlPoints" -> {{-6, 
+               0}, {-7, 3 3^Rational[1, 2]}, {-8, 2 3^Rational[1, 2]}, {-9, 3^
+                Rational[1, 2]}, {-8, 0}}|>, <|"code" -> {{{
+                 Rational[-15, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False,
+                 7}}, "controlPoints" -> {{-9, 3^Rational[1, 2]}, {-10, 4 
+                3^Rational[1, 2]}, {-11, 3 3^Rational[1, 2]}, {-12, 2 
+                3^Rational[1, 2]}, {-11, 3^Rational[1, 2]}}|>, <|"code" -> {{{
+                 Rational[-15, 2], Rational[5, 2] 3^Rational[1, 2]}, 6, False,
+                 7}}, "controlPoints" -> {{-9, 3 3^Rational[1, 2]}, {-5, 5 
+                3^Rational[1, 2]}, {-7, 5 3^Rational[1, 2]}, {-9, 5 
+                3^Rational[1, 2]}, {-10, 4 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-6, 3 3^Rational[1, 2]}, 4, False, 7}}, 
+             "controlPoints" -> {{-6, 4 3^Rational[1, 2]}, {-1, 3 
+                3^Rational[1, 2]}, {-2, 4 3^Rational[1, 2]}, {-3, 5 
+                3^Rational[1, 2]}, {-5, 5 3^Rational[1, 2]}}|>, <|"code" -> {{{
+                 Rational[9, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False, 
+                7}}, "controlPoints" -> {{3, -3^Rational[1, 2]}, {
+               2, 2 3^Rational[1, 2]}, {1, 3^Rational[1, 2]}, {0, 0}, {
+               1, -3^Rational[1, 2]}}|>} -> "Hat Tile", {<|"code" -> {{{
+                 Rational[1, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[-5, 2], Rational[3, 2] 3^Rational[1, 2]}, 0, False, 
+                7}, {{-4, 3^Rational[1, 2]}, 10, False, 
+                7}, {{-4, 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-11, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-17, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-17, 2], Rational[7, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{-7, 4 3^Rational[1, 2]}, 4, False, 7}}, 
+             "controlPoints" -> {{0, 
+               0}, {-4, 6 3^Rational[1, 2]}, {-10, 6 3^Rational[1, 2]}, {-12, 
+                2 3^Rational[1, 2]}, {-7, -3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[-5, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-1, (-2) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[1, 2], Rational[-5, 2] 3^Rational[1, 2]}, 2, False, 
+                7}, {{
+                 Rational[1, 2], Rational[-5, 2] 3^Rational[1, 2]}, 10, True, 
+                11}, {{
+                 Rational[1, 2], Rational[-7, 2] 3^Rational[1, 2]}, 0, False, 
+                7}, {{
+                 Rational[1, 2], Rational[-11, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-1, (-6) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-5, 2], Rational[-11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}}, 
+             "controlPoints" -> {{0, 
+               0}, {-7, (-5) 3^Rational[1, 2]}, {-4, (-8) 3^Rational[1, 2]}, {
+               3, (-7) 3^Rational[1, 2]}, {5, (-3) 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-7, 0}, 10, False, 7}, {{
+                 Rational[-17, 2], Rational[-3, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-17, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-17, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, True,
+                 11}, {{-10, (-3) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-13, (-4) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-29, 2], Rational[-7, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-29, 2], Rational[-5, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}}, 
+             "controlPoints" -> {{-5, -3^Rational[1, 2]}, {-16, 
+               0}, {-19, (-3) 3^Rational[1, 2]}, {-14, (-6) 
+                3^Rational[1, 2]}, {-7, (-5) 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[-23, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-13, 2 3^Rational[1, 2]}, 10, False, 
+                7}, {{-13, 2 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-29, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-35, 2], Rational[7, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-35, 2], Rational[9, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{-16, 5 3^Rational[1, 2]}, 4, False, 7}}, 
+             "controlPoints" -> {{-9, 3^Rational[1, 2]}, {-13, 7 
+                3^Rational[1, 2]}, {-19, 7 3^Rational[1, 2]}, {-21, 3 
+                3^Rational[1, 2]}, {-16, 0}}|>, <|"code" -> {{{
+                 Rational[-41, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-47, 2], Rational[9, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-25, 4 3^Rational[1, 2]}, 10, False, 
+                7}, {{-25, 4 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-53, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-59, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-59, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-28, 7 3^Rational[1, 2]}, 4, False, 7}}, 
+             "controlPoints" -> {{-21, 3 3^Rational[1, 2]}, {-25, 9 
+                3^Rational[1, 2]}, {-31, 9 3^Rational[1, 2]}, {-33, 5 
+                3^Rational[1, 2]}, {-28, 2 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[-35, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-19, 8 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-41, 2], Rational[17, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-41, 2], Rational[17, 2] 3^Rational[1, 2]}, 4, True,
+                 11}, {{
+                 Rational[-41, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-41, 2], Rational[23, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-19, 12 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-35, 2], Rational[23, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}}, 
+             "controlPoints" -> {{-20, 6 3^Rational[1, 2]}, {-13, 11 
+                3^Rational[1, 2]}, {-16, 14 3^Rational[1, 2]}, {-23, 13 
+                3^Rational[1, 2]}, {-25, 9 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-13, 6 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-23, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-23, 2], Rational[17, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-23, 2], Rational[17, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-10, 9 3^Rational[1, 2]}, 4, False, 
+                7}, {{-7, 10 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-11, 2], Rational[19, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-11, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}}, 
+             "controlPoints" -> {{-15, 7 3^Rational[1, 2]}, {-4, 6 
+                3^Rational[1, 2]}, {-1, 9 3^Rational[1, 2]}, {-6, 12 
+                3^Rational[1, 2]}, {-13, 11 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[25, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[19, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{8, -3^Rational[1, 2]}, 10, False, 7}, {{
+                8, -3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[13, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[7, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[7, 2], Rational[3, 2] 3^Rational[1, 2]}, 6, False, 
+                7}, {{5, 2 3^Rational[1, 2]}, 4, False, 7}}, 
+             "controlPoints" -> {{12, (-2) 3^Rational[1, 2]}, {
+               8, 4 3^Rational[1, 2]}, {2, 4 3^Rational[1, 2]}, {0, 0}, {
+               5, (-3) 3^Rational[1, 2]}}|>} -> "0-Supertile", {<|"code" -> {{{
+                 Rational[-9, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[-15, 2], Rational[9, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-9, 4 3^Rational[1, 2]}, 10, False, 
+                7}, {{-9, 4 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-21, 2], Rational[9, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-27, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-12, 7 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-15, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-6, 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 2, False, 
+                7}, {{
+                 Rational[-9, 2], Rational[1, 2] 3^Rational[1, 2]}, 10, True, 
+                11}, {{
+                 Rational[-9, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[-9, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-6, (-3) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-15, 2], Rational[-5, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{-12, 3 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-27, 2], Rational[3, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[-27, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[-27, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, True, 
+                11}, {{-15, 0}, 10, False, 7}, {{-18, -3^Rational[1, 2]}, 10, 
+                False, 7}, {{
+                 Rational[-39, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-39, 2], Rational[1, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{
+                 Rational[-33, 2], Rational[11, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-18, 5 3^Rational[1, 2]}, 10, False, 
+                7}, {{-18, 5 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-39, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[13, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[15, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-21, 8 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-51, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[15, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-30, 7 3^Rational[1, 2]}, 10, False, 
+                7}, {{-30, 7 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-63, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-69, 2], Rational[17, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-69, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-33, 10 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-45, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-24, 11 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-51, 2], Rational[23, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-51, 2], Rational[23, 2] 3^Rational[1, 2]}, 4, True,
+                 11}, {{
+                 Rational[-51, 2], Rational[25, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-51, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-24, 15 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-45, 2], Rational[29, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{-18, 9 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-33, 2], Rational[21, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-33, 2], Rational[23, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-33, 2], Rational[23, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-15, 12 3^Rational[1, 2]}, 4, False, 
+                7}, {{-12, 13 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-21, 2], Rational[25, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-21, 2], Rational[23, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}}, 
+             "controlPoints" -> {{0, 
+               0}, {-11, 15 3^Rational[1, 2]}, {-28, 16 
+                3^Rational[1, 2]}, {-33, 5 3^Rational[1, 2]}, {-19, (-3) 
+                3^Rational[1, 2]}}|>, <|"code" -> {{{
+                 Rational[-9, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-3, (-6) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-3, 2], Rational[-13, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-3, 2], Rational[-13, 2] 3^Rational[1, 2]}, 10, 
+                True, 11}, {{
+                 Rational[-3, 2], Rational[-15, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-3, 2], Rational[-19, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-3, (-10) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-9, 2], Rational[-19, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{0, (-5) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[3, 2], Rational[-7, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[3, 2], Rational[-5, 2] 3^Rational[1, 2]}, 6, False, 
+                7}, {{
+                 Rational[3, 2], Rational[-5, 2] 3^Rational[1, 2]}, 6, True, 
+                11}, {{3, (-2) 3^Rational[1, 2]}, 4, False, 7}, {{
+                6, -3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[15, 2], Rational[-3, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[15, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[3, 2], Rational[-15, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[9, 2], Rational[-15, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{6, (-7) 3^Rational[1, 2]}, 4, False, 7}, {{
+                6, (-7) 3^Rational[1, 2]}, 8, True, 11}, {{
+                 Rational[15, 2], Rational[-15, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[21, 2], Rational[-17, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[21, 2], Rational[-19, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{9, (-10) 3^Rational[1, 2]}, 10, False, 7}, {{
+                0, (-11) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[3, 2], Rational[-23, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[3, 2], Rational[-23, 2] 3^Rational[1, 2]}, 10, True,
+                 11}, {{
+                 Rational[3, 2], Rational[-25, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[3, 2], Rational[-29, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{0, (-15) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-3, 2], Rational[-29, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[3, 2], Rational[-33, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{3, (-18) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 10, True,
+                 11}, {{
+                 Rational[9, 2], Rational[-39, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[9, 2], Rational[-43, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{3, (-22) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[3, 2], Rational[-43, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{-3, (-16) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-9, 2], Rational[-35, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-9, 2], Rational[-37, 2] 3^Rational[1, 2]}, 0, True,
+                 11}, {{-6, (-19) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-9, (-20) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-21, 2], Rational[-39, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-21, 2], Rational[-37, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-9, 2], Rational[-27, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-15, 2], Rational[-27, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-9, (-14) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-9, (-14) 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-21, 2], Rational[-27, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[-25, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[-23, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-12, (-11) 3^Rational[1, 2]}, 4, False, 7}}, 
+             "controlPoints" -> {{0, 
+               0}, {-17, (-13) 3^Rational[1, 2]}, {-10, (-22) 
+                3^Rational[1, 2]}, {9, (-19) 3^Rational[1, 2]}, {
+               14, (-8) 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-21, (-2) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-45, 2], Rational[-7, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, True,
+                 11}, {{-24, (-5) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-27, (-6) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-57, 2], Rational[-11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[-9, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-39, 2], Rational[-9, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-33, 2], Rational[-9, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-15, (-4) 3^Rational[1, 2]}, 4, False, 
+                7}, {{-15, (-4) 3^Rational[1, 2]}, 8, True, 11}, {{
+                 Rational[-27, 2], Rational[-9, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-21, 2], Rational[-11, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-21, 2], Rational[-13, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-12, (-7) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-45, 2], Rational[-13, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-21, (-8) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-39, 2], Rational[-17, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-39, 2], Rational[-17, 2] 3^Rational[1, 2]}, 10, 
+                True, 11}, {{
+                 Rational[-39, 2], Rational[-19, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-39, 2], Rational[-23, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-21, (-12) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-45, 2], Rational[-23, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[-15, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[-17, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[-17, 2] 3^Rational[1, 2]}, 0, 
+                True, 11}, {{-30, (-9) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-33, (-10) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-69, 2], Rational[-19, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-69, 2], Rational[-17, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-36, (-11) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-75, 2], Rational[-25, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[-27, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[-27, 2] 3^Rational[1, 2]}, 0, 
+                True, 11}, {{-39, (-14) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-42, (-15) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-87, 2], Rational[-29, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-87, 2], Rational[-27, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[-17, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-81, 2], Rational[-17, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-42, (-9) 3^Rational[1, 2]}, 10, False, 
+                7}, {{-42, (-9) 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-87, 2], Rational[-17, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[-15, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[-13, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-45, (-6) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-69, 2], Rational[-13, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-36, (-5) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-75, 2], Rational[-9, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[-9, 2] 3^Rational[1, 2]}, 4, True,
+                 11}, {{
+                 Rational[-75, 2], Rational[-7, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[-3, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-36, -3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-69, 2], Rational[-3, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}}, 
+             "controlPoints" -> {{-12, (-2) 3^Rational[1, 2]}, {-40, 
+               0}, {-50, (-8) 3^Rational[1, 2]}, {-36, (-16) 
+                3^Rational[1, 2]}, {-17, (-13) 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[-57, 2], Rational[11, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-27, 4 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-51, 2], Rational[7, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[-51, 2], Rational[7, 2] 3^Rational[1, 2]}, 10, True,
+                 11}, {{
+                 Rational[-51, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[-51, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-27, 0}, 10, False, 7}, {{
+                 Rational[-57, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{-33, 6 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-69, 2], Rational[9, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[-69, 2], Rational[7, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[-69, 2], Rational[7, 2] 3^Rational[1, 2]}, 0, True, 
+                11}, {{-36, 3 3^Rational[1, 2]}, 10, False, 
+                7}, {{-39, 2 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-81, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[-81, 2], Rational[7, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{
+                 Rational[-75, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-39, 8 3^Rational[1, 2]}, 10, False, 
+                7}, {{-39, 8 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-81, 2], Rational[17, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-87, 2], Rational[19, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-87, 2], Rational[21, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-42, 11 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-93, 2], Rational[21, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-99, 2], Rational[21, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-51, 10 3^Rational[1, 2]}, 10, False, 
+                7}, {{-51, 10 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-105, 2], Rational[21, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-111, 2], Rational[23, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-111, 2], Rational[25, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-54, 13 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-87, 2], Rational[25, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-45, 14 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-93, 2], Rational[29, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[29, 2] 3^Rational[1, 2]}, 4, True,
+                 11}, {{
+                 Rational[-93, 2], Rational[31, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-45, 18 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-87, 2], Rational[35, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{-39, 12 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-75, 2], Rational[27, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-36, 15 3^Rational[1, 2]}, 4, False, 
+                7}, {{-33, 16 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-63, 2], Rational[31, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-63, 2], Rational[29, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}}, 
+             "controlPoints" -> {{-21, 3 3^Rational[1, 2]}, {-32, 18 
+                3^Rational[1, 2]}, {-49, 19 3^Rational[1, 2]}, {-54, 8 
+                3^Rational[1, 2]}, {-40, 0}}|>, <|"code" -> {{{
+                 Rational[-117, 2], Rational[25, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-123, 2], Rational[25, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-63, 12 3^Rational[1, 2]}, 10, False, 
+                7}, {{-63, 12 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-129, 2], Rational[25, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-135, 2], Rational[27, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-135, 2], Rational[29, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-66, 15 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-123, 2], Rational[21, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-60, 9 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-117, 2], Rational[17, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-117, 2], Rational[17, 2] 3^Rational[1, 2]}, 10, 
+                True, 11}, {{
+                 Rational[-117, 2], Rational[15, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-117, 2], Rational[11, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-60, 5 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-123, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{-66, 11 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-135, 2], Rational[19, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-135, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-135, 2], Rational[17, 2] 3^Rational[1, 2]}, 0, 
+                True, 11}, {{-69, 8 3^Rational[1, 2]}, 10, False, 
+                7}, {{-72, 7 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-147, 2], Rational[15, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-147, 2], Rational[17, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-141, 2], Rational[27, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-72, 13 3^Rational[1, 2]}, 10, False, 
+                7}, {{-72, 13 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-147, 2], Rational[27, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-153, 2], Rational[29, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-153, 2], Rational[31, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-75, 16 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-159, 2], Rational[31, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-165, 2], Rational[31, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-84, 15 3^Rational[1, 2]}, 10, False, 
+                7}, {{-84, 15 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-171, 2], Rational[31, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-177, 2], Rational[33, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-177, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-87, 18 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-153, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-78, 19 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-159, 2], Rational[39, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-159, 2], Rational[39, 2] 3^Rational[1, 2]}, 4, 
+                True, 11}, {{
+                 Rational[-159, 2], Rational[41, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-159, 2], Rational[45, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-78, 23 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-153, 2], Rational[45, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{-72, 17 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-141, 2], Rational[37, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-141, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-141, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, 
+                True, 11}, {{-69, 20 3^Rational[1, 2]}, 4, False, 
+                7}, {{-66, 21 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-129, 2], Rational[41, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-129, 2], Rational[39, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}}, 
+             "controlPoints" -> {{-54, 8 3^Rational[1, 2]}, {-65, 23 
+                3^Rational[1, 2]}, {-82, 24 3^Rational[1, 2]}, {-87, 13 
+                3^Rational[1, 2]}, {-73, 5 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[-93, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-48, 21 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-99, 2], Rational[43, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-99, 2], Rational[43, 2] 3^Rational[1, 2]}, 4, True,
+                 11}, {{
+                 Rational[-99, 2], Rational[45, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-99, 2], Rational[49, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-48, 25 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-93, 2], Rational[49, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{-51, 20 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-105, 2], Rational[37, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-105, 2], Rational[35, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-105, 2], Rational[35, 2] 3^Rational[1, 2]}, 0, 
+                True, 11}, {{-54, 17 3^Rational[1, 2]}, 10, False, 
+                7}, {{-57, 16 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-117, 2], Rational[33, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-117, 2], Rational[35, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-105, 2], Rational[45, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-111, 2], Rational[45, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-57, 22 3^Rational[1, 2]}, 10, False, 
+                7}, {{-57, 22 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-117, 2], Rational[45, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-123, 2], Rational[47, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-123, 2], Rational[49, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-60, 25 3^Rational[1, 2]}, 4, False, 
+                7}, {{-51, 26 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-105, 2], Rational[53, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-105, 2], Rational[53, 2] 3^Rational[1, 2]}, 4, 
+                True, 11}, {{
+                 Rational[-105, 2], Rational[55, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-105, 2], Rational[59, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-51, 30 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-99, 2], Rational[59, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-105, 2], Rational[63, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-54, 33 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-111, 2], Rational[67, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-111, 2], Rational[67, 2] 3^Rational[1, 2]}, 4, 
+                True, 11}, {{
+                 Rational[-111, 2], Rational[69, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-111, 2], Rational[73, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-54, 37 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-105, 2], Rational[73, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{-48, 31 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-93, 2], Rational[65, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[67, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[67, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-45, 34 3^Rational[1, 2]}, 4, False, 
+                7}, {{-42, 35 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-81, 2], Rational[69, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-81, 2], Rational[67, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-93, 2], Rational[57, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-87, 2], Rational[57, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-42, 29 3^Rational[1, 2]}, 4, False, 
+                7}, {{-42, 29 3^Rational[1, 2]}, 8, True, 11}, {{
+                 Rational[-81, 2], Rational[57, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[55, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-75, 2], Rational[53, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-39, 26 3^Rational[1, 2]}, 10, False, 7}}, 
+             "controlPoints" -> {{-51, 15 3^Rational[1, 2]}, {-34, 28 
+                3^Rational[1, 2]}, {-41, 37 3^Rational[1, 2]}, {-60, 34 
+                3^Rational[1, 2]}, {-65, 23 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{-30, 17 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-57, 2], Rational[37, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-57, 2], Rational[39, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-27, 20 3^Rational[1, 2]}, 4, False, 
+                7}, {{-24, 21 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-45, 2], Rational[41, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[39, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-63, 2], Rational[39, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-69, 2], Rational[39, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-36, 19 3^Rational[1, 2]}, 10, False, 
+                7}, {{-36, 19 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[-75, 2], Rational[39, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-81, 2], Rational[41, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-81, 2], Rational[43, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-39, 22 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-57, 2], Rational[43, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-30, 23 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-63, 2], Rational[47, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-63, 2], Rational[47, 2] 3^Rational[1, 2]}, 4, True,
+                 11}, {{
+                 Rational[-63, 2], Rational[49, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-63, 2], Rational[53, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-30, 27 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-57, 2], Rational[53, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[45, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[47, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-45, 2], Rational[47, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-21, 24 3^Rational[1, 2]}, 4, False, 
+                7}, {{-18, 25 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-33, 2], Rational[49, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-33, 2], Rational[47, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-15, 26 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-27, 2], Rational[55, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[57, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[57, 2] 3^Rational[1, 2]}, 6, True,
+                 11}, {{-12, 29 3^Rational[1, 2]}, 4, False, 
+                7}, {{-9, 30 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-15, 2], Rational[59, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-15, 2], Rational[57, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[47, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-21, 2], Rational[47, 2] 3^Rational[1, 2]}, 6, 
+                False, 7}, {{-9, 24 3^Rational[1, 2]}, 4, False, 
+                7}, {{-9, 24 3^Rational[1, 2]}, 8, True, 11}, {{
+                 Rational[-15, 2], Rational[47, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-9, 2], Rational[45, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[-9, 2], Rational[43, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{-6, 21 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-33, 2], Rational[43, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-15, 20 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[-27, 2], Rational[39, 2] 3^Rational[1, 2]}, 2, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[39, 2] 3^Rational[1, 2]}, 10, 
+                True, 11}, {{
+                 Rational[-27, 2], Rational[37, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[-27, 2], Rational[33, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{-15, 16 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[-33, 2], Rational[33, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}}, 
+             "controlPoints" -> {{-39, 17 3^Rational[1, 2]}, {-11, 15 
+                3^Rational[1, 2]}, {-1, 23 3^Rational[1, 2]}, {-15, 31 
+                3^Rational[1, 2]}, {-34, 28 3^Rational[1, 2]}}|>, <|
+            "code" -> {{{
+                 Rational[57, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[51, 2], Rational[-1, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{24, -3^Rational[1, 2]}, 10, False, 7}, {{
+                24, -3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[45, 2], Rational[-1, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[39, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[39, 2], Rational[3, 2] 3^Rational[1, 2]}, 6, False, 
+                7}, {{21, 2 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[51, 2], Rational[-5, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{27, (-4) 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[57, 2], Rational[-9, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[57, 2], Rational[-9, 2] 3^Rational[1, 2]}, 10, True,
+                 11}, {{
+                 Rational[57, 2], Rational[-11, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{
+                 Rational[57, 2], Rational[-15, 2] 3^Rational[1, 2]}, 0, 
+                False, 7}, {{27, (-8) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[51, 2], Rational[-15, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{21, (-2) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[39, 2], Rational[-7, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[39, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, False,
+                 7}, {{
+                 Rational[39, 2], Rational[-9, 2] 3^Rational[1, 2]}, 0, True, 
+                11}, {{18, (-5) 3^Rational[1, 2]}, 10, False, 7}, {{
+                15, (-6) 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[27, 2], Rational[-11, 2] 3^Rational[1, 2]}, 8, 
+                False, 7}, {{
+                 Rational[27, 2], Rational[-9, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{
+                 Rational[33, 2], Rational[1, 2] 3^Rational[1, 2]}, 0, False, 
+                7}, {{15, 0}, 10, False, 7}, {{15, 0}, 2, True, 11}, {{
+                 Rational[27, 2], Rational[1, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[21, 2], Rational[3, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[21, 2], Rational[5, 2] 3^Rational[1, 2]}, 6, False, 
+                7}, {{12, 3 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[15, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[9, 2], Rational[5, 2] 3^Rational[1, 2]}, 0, False, 
+                7}, {{3, 2 3^Rational[1, 2]}, 10, False, 7}, {{
+                3, 2 3^Rational[1, 2]}, 2, True, 11}, {{
+                 Rational[3, 2], Rational[5, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[-3, 2], Rational[7, 2] 3^Rational[1, 2]}, 8, False, 
+                7}, {{
+                 Rational[-3, 2], Rational[9, 2] 3^Rational[1, 2]}, 6, False, 
+                7}, {{0, 5 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[21, 2], Rational[9, 2] 3^Rational[1, 2]}, 6, False, 
+                7}, {{9, 6 3^Rational[1, 2]}, 10, False, 7}, {{
+                 Rational[15, 2], Rational[13, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[15, 2], Rational[13, 2] 3^Rational[1, 2]}, 4, True, 
+                11}, {{
+                 Rational[15, 2], Rational[15, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{
+                 Rational[15, 2], Rational[19, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{9, 10 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[21, 2], Rational[19, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{15, 4 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[33, 2], Rational[11, 2] 3^Rational[1, 2]}, 8, False,
+                 7}, {{
+                 Rational[33, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, False,
+                 7}, {{
+                 Rational[33, 2], Rational[13, 2] 3^Rational[1, 2]}, 6, True, 
+                11}, {{18, 7 3^Rational[1, 2]}, 4, False, 7}, {{
+                21, 8 3^Rational[1, 2]}, 4, False, 7}, {{
+                 Rational[45, 2], Rational[15, 2] 3^Rational[1, 2]}, 2, False,
+                 7}, {{
+                 Rational[45, 2], Rational[13, 2] 3^Rational[1, 2]}, 0, False,
+                 7}}, "controlPoints" -> {{33, (-5) 3^Rational[1, 2]}, {
+               22, 10 3^Rational[1, 2]}, {5, 11 3^Rational[1, 2]}, {0, 0}, {
+               14, (-8) 3^Rational[1, 2]}}|>} -> 
+          "1-Supertile"}}, {$CellContext`ShowPoints$$, {True, False}}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{668., {191.13403328722342`, 196.86596671277658`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`Tile[
+         Pattern[$CellContext`step, 
+          Blank[]]][
+         Pattern[$CellContext`or, 
+          Blank[]], 
+         Pattern[$CellContext`dir, 
+          Blank[]], 
+         Pattern[$CellContext`ref, 
+          Blank[]], 
+         Pattern[$CellContext`pt, 
+          Blank[]]] := Polygon[
+         $CellContext`TileVertices[$CellContext`step][$CellContext`or, \
+$CellContext`dir, $CellContext`ref, $CellContext`pt]], \
+$CellContext`TileVertices[
+         Pattern[$CellContext`step, 
+          Blank[]]][
+         Pattern[$CellContext`or, 
+          Blank[]], 
+         Pattern[$CellContext`dir, 
+          Blank[]], 
+         Pattern[$CellContext`ref, 
+          Blank[]], 
+         Pattern[$CellContext`pt, 
+          Blank[]]] := With[{$CellContext`basicVertices = AnglePath[{{
+              Part[$CellContext`step, 2], (-Pi)/6 + $CellContext`dir (Pi/6)}, {
+              Part[$CellContext`step, 2], Pi/3}, {
+              Part[$CellContext`step, 1], Pi/2}, {
+              Part[$CellContext`step, 1], Pi/3}, {
+              Part[$CellContext`step, 2], (-Pi)/2}, {
+              Part[$CellContext`step, 2], Pi/3}, {
+              Part[$CellContext`step, 1], Pi/2}, {
+              Part[$CellContext`step, 1], (-Pi)/3}, {
+              Part[$CellContext`step, 2], Pi/2}, {
+              Part[$CellContext`step, 2], (-Pi)/3}, {
+              Part[$CellContext`step, 1], Pi/2}, {
+              Part[$CellContext`step, 1], Pi/3}, {
+              Part[$CellContext`step, 1], 0}}]}, 
+         Expand[
+          Map[# + $CellContext`or& , 
+           Map[If[$CellContext`ref, {-Part[#, 1], 
+              Part[#, 2]}, #]& , 
+            
+            Map[# - Part[$CellContext`basicVertices, $CellContext`pt]& , \
+$CellContext`basicVertices]]]]]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.901957942558449*^9, {3.9019579734138002`*^9, 3.901958091583785*^9}, {
+   3.9019581351188087`*^9, 3.9019581446711097`*^9}, {3.901958242009839*^9, 
+   3.90195826687239*^9}, {3.9019583249198246`*^9, 3.9019583998266883`*^9}, {
+   3.9019584927304544`*^9, 3.9019585919380994`*^9}, 3.901958632711528*^9, {
+   3.9019586845678844`*^9, 3.901958710271305*^9}, 3.901958806976489*^9, 
+   3.9019588739231834`*^9, {3.9019589395972795`*^9, 3.9019589876205873`*^9}, {
+   3.901959025363737*^9, 3.901959025791714*^9}, {3.9019592433486013`*^9, 
+   3.9019592638117003`*^9}, {3.901959303159258*^9, 3.9019593244971933`*^9}, {
+   3.9019593555131655`*^9, 3.901959413944194*^9}, {3.901959459040928*^9, 
+   3.901959511688752*^9}, {3.9019595436501555`*^9, 3.901959584278721*^9}, {
+   3.9019596174201264`*^9, 3.9019596403350306`*^9}},
+ CellLabel->
+  "Out[120]=",ExpressionUUID->"5b3d993a-e809-44f3-8ac7-47edbe2be0ed"]
+}, Open  ]]
+},
+WindowSize->{1152, 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c065a731-037b-479e-a9c1-f61c2d77f702"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 233, 4, 98, "Title",ExpressionUUID->"9e1db05e-02e2-4e44-893c-27b9c2a03865"],
+Cell[816, 28, 103071, 1768, 407, "Output",ExpressionUUID->"5b3d993a-e809-44f3-8ac7-47edbe2be0ed"]
+}, Open  ]]
+}
+]
+*)
+
